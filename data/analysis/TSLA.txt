@@ -1,0 +1,11 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=-0.2
+vol_mult=1.15
+drift_tilt=-0.03
+event_prob=0.15
+event_size=-0.25
+summary=One of the most volatile large stocks; falling with high-valuation tech as rate-hike fears grow.
+headline=Tesla sinks with high-flying tech as rate fears grow
+factor=Macro|-1|Expected Fed hikes hurt high-valuation growth stocks the most.
+factor=Sector|-1|Caught in the broader tech and AI sell-off.

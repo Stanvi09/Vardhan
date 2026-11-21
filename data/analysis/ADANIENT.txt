@@ -1,0 +1,14 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=-0.15
+vol_mult=1.35
+drift_tilt=-0.02
+event_prob=0.15
+event_size=-0.25
+summary=Group restructuring is moving forward, but this is one of the most volatile large stocks in India and trades well below its 52-week high.
+headline=Adani Enterprises trades far below its high as debt worries linger
+factor=Regulation|1|In March 2026 the NCLT approved merging its green-hydrogen units into the company, simplifying the group.
+factor=Macro|-1|Trades about ₹500 below its 52-week high, with a negative 3-month trend.
+factor=Governance|-2|Group stocks have a history of very sharp falls on governance or debt news; high debt levels.
+news=12 Nov|5paisa|Adani Enterprises closes at ₹2,741, up 1%
+news=Mar|Economic Times|Adani Enterprises in focus after NCLT clears unit merger

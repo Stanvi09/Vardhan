@@ -1,0 +1,12 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=0.2
+vol_mult=0.95
+drift_tilt=0.01
+event_prob=0.05
+event_size=-0.12
+summary=Telecom leader that recovered in November after a weak first half of 2026; business is steady with pricing power.
+headline=Airtel leads Nifty gainers as foreign money returns
+factor=Sector|1|Led Nifty gainers on 13 Nov, trading around ₹2,110.
+factor=Macro|-1|Fell about 16% earlier in 2026 as foreign investors cut holdings.
+news=13 Nov|HDFC Sky|Bharti Airtel leads top gainers

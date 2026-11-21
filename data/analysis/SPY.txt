@@ -1,0 +1,14 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=-0.2
+vol_mult=1.1
+drift_tilt=-0.02
+event_prob=0.06
+event_size=-0.15
+summary=US stocks fell four days in a row as AI stocks sold off and the Fed is widely expected to raise rates in December.
+headline=Wall Street braces for a December rate hike as AI stocks slide
+factor=Macro|-2|A strong October inflation report has markets expecting a Fed rate hike on 9 Dec, with more possible in 2027.
+factor=Sector|-2|An AI-led tech sell-off has dragged the S&P 500 lower for four straight sessions.
+factor=Earnings|1|Big companies are still reporting strong profit growth, led by chipmakers.
+news=17 Nov|AP|Another wipeout hits Wall Street as Nvidia and AI stocks swing lower
+news=18 Nov|Stock Analysis|S&P 500 posts fourth straight loss

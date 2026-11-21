@@ -1,0 +1,13 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=-0.3
+vol_mult=1.05
+drift_tilt=-0.05
+event_prob=0.06
+event_size=-0.12
+summary=A traditionally safe consumer stock that is down about 30% in 2026 after a cigarette-tax hike and heavy foreign selling.
+headline=ITC down 30% this year after tobacco tax hike and foreign selling
+factor=Regulation|-2|A higher cigarette tax took effect on 1 Feb 2026, hitting its biggest profit engine.
+factor=Macro|-2|Down about 30% this year; a ₹9,437 crore block deal on 8 Oct pushed it to a 52-week low.
+factor=Sector|1|FMCG is usually defensive, so falls tend to be slower in market crashes.
+news=08 Oct|Business Today|ITC hits 52-week low as ₹9,437 crore block deal weighs

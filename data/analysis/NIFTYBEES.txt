@@ -1,0 +1,15 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=0.35
+vol_mult=0.95
+drift_tilt=0.01
+event_prob=0.06
+event_size=-0.12
+summary=Indian large caps had a three-week winning streak on record foreign buying; the Nifty is up nearly 10% in November. Watch US rate hikes and IT weakness.
+headline=Foreign money floods back; Nifty heads for its best month since 2020
+factor=Macro|2|Foreign investors bought about $8.9 billion of Indian shares in November so far, after months of selling.
+factor=Macro|1|The Nifty is up nearly 10% this month, on track for its best month since November 2020.
+factor=Macro|1|Brent crude fell about 13% in early November, which helps India as a big oil importer.
+factor=Sector|-1|IT, a big part of the index, keeps falling on AI-disruption worries.
+news=18 Nov|DSIJ|Nifty snaps two-day rally on profit booking; metals slide
+news=14 Nov|HDFC Sky|Sensex, Nifty extend winning streak to third week as FIIs pour in

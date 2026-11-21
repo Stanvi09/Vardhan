@@ -1,0 +1,13 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=0.35
+vol_mult=1.0
+drift_tilt=0.02
+event_prob=0.07
+event_size=-0.15
+summary=Rebounding strongly from its October low as foreign money returns to Indian banks, though still far below last year's high.
+headline=HDFC Bank bounces 22% off its October low
+factor=Macro|2|Rebounded about 22% from its 52-week low of ₹669 on 28 Oct to about ₹818 on 11 Nov.
+factor=Sector|1|Financials led the November rally as foreign investors returned.
+factor=Macro|-1|Still well below its 52-week high of about ₹1,017 after heavy foreign selling earlier in 2026.
+news=11 Nov|IIFL|HDFC Bank hits 3-month high, 22% above its October low

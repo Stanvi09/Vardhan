@@ -1,0 +1,13 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=0.3
+vol_mult=1.1
+drift_tilt=0.02
+event_prob=0.07
+event_size=-0.16
+summary=Q3 revenue and ad sales both grew 26%, but heavy AI spending and a $9.9 billion legal charge cut operating profit by 37%.
+headline=Meta's ad sales jump 26%, but AI spending and a legal bill dent profit
+factor=Earnings|2|Q3 2026 advertising revenue rose 26% to $63.1 billion, beating expectations.
+factor=Governance|-1|A $9.9 billion charge for the youth mental-health settlement with US states hit the quarter.
+factor=Sector|-1|Capital spending of $34.9 billion in one quarter makes it sensitive to the AI sell-off.
+news=21 Oct|Adweek|Meta beats Q3 expectations with 26% ad growth

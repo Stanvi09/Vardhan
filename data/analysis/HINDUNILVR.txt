@@ -1,0 +1,12 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=0.1
+vol_mult=0.9
+drift_tilt=0.0
+event_prob=0.04
+event_size=-0.1
+summary=Defensive consumer company; FMCG stocks rallied early in November, but high inflation can squeeze margins.
+headline=HUL holds steady as investors hunt for safer consumer stocks
+factor=Sector|1|FMCG stocks led gains on 3 Nov; HUL rose about 3.4%.
+factor=Macro|-1|Rising raw-material costs are squeezing consumer companies' margins this season.
+news=03 Nov|HDFC Sky|FMCG, realty and private banks lead rally

@@ -1,0 +1,13 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=0.4
+vol_mult=1.05
+drift_tilt=0.03
+event_prob=0.07
+event_size=-0.15
+summary=PSU banks are leading the market this month; SBI was the top Nifty gainer on 18 Nov.
+headline=SBI tops Nifty gainers as PSU banks defy a falling market
+factor=Sector|2|PSU banks bucked a weak market on 18 Nov; SBI rose about 2.4% to around ₹1,135.
+factor=Macro|1|Strong foreign inflows into Indian financials in November.
+factor=Macro|-1|State-owned banks are more sensitive to economic slowdowns and bad-loan cycles.
+news=18 Nov|HDFC Sky|SBI leads Nifty gainers as PSU banks rally

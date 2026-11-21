@@ -1,0 +1,23 @@
+# Build output
+*.exe
+*.o
+*.obj
+vardhan
+vardhan_tests
+
+# Personal data the app writes next to itself (accounts, plans, transactions)
+data/users.txt
+data/prices/
+data/*.txt
+profile*.txt
+txn_*
+alerts_*
+settings.txt
+reports/
+tmp_*
+test_tmp/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

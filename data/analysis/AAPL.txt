@@ -1,0 +1,13 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=0.0
+vol_mult=1.0
+drift_tilt=0.0
+event_prob=0.05
+event_size=-0.12
+summary=Solid recent quarter, but caught in the broad tech sell-off. A brief services outage on 17 Nov was quickly fixed.
+headline=Apple's own update knocks out Apple Pay and iCloud for a day
+factor=Operations|-1|An internal update knocked out Apple Pay, iCloud and other services on 17 Nov; restored the next day.
+factor=Earnings|1|Last quarter's profit and revenue came in stronger than a year ago.
+factor=Macro|-1|Expected Fed rate hikes weigh on big technology stocks.
+news=18 Nov|Stock Analysis|Apple restores services after widespread outage

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vardhan: see the downside before you invest</title>
+<meta name="description" content="A money planner for first-time investors, written in C. It shows what a bad year would cost you, and why.">
+<meta property="og:title" content="Vardhan: see the downside before you invest">
+<meta property="og:description" content="A money planner for first-time investors, written in C. Real Indian and US stocks, honest risk in rupees, and the news behind every pick.">
+<meta property="og:image" content="img/home.jpg">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0D0A16;--panel:#141022;--ink:#F6F3FC;--mut:#9890AE;--acc:#A78BFA;--acc2:#7C3AED;--hair:#251D38;--good:#34D399;--bad:#F87171}
+@media (prefers-color-scheme:light){:root{--bg:#F8F7FB;--panel:#FFFFFF;--ink:#17122A;--mut:#6A6380;--acc:#7C3AED;--acc2:#6D28D9;--hair:#E5E0EF;--good:#059669;--bad:#DC2626}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:17px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--mut)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:28px 0}
+nav .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:600}
+nav .brand img{width:34px;height:34px;border-radius:9px}
+nav .links{display:flex;gap:26px}
+nav .links a{text-decoration:none}
+nav .links a:hover{color:var(--ink)}
+header{padding:64px 0 40px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+h1{font:italic 400 clamp(84px,12vw,150px)/.9 'Instrument Serif',Georgia,serif;letter-spacing:-.02em;color:var(--acc)}
+.lede{font-size:21px;color:var(--mut);margin:26px 0 34px;max-width:34ch}
+.lede b{color:var(--ink);font-weight:500}
+.cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.btn.primary{background:linear-gradient(135deg,#8B5CF6,#6D28D9);color:#fff;box-shadow:0 10px 30px -10px #7C3AED}
+.btn.primary:hover{transform:translateY(-2px);box-shadow:0 16px 36px -12px #7C3AED}
+.btn.ghost{border:1px solid var(--hair);color:var(--ink)}
+.btn.ghost:hover{border-color:var(--acc)}
+.small{font-size:14px;color:var(--mut);margin-top:16px}
+.card{background:var(--panel);border:1px solid var(--hair);border-radius:16px}
+.fan{padding:0}
+.fan .bar{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--hair)}
+.fan .dots{display:flex;gap:7px}.fan .dots i{width:9px;height:9px;border:1px solid var(--mut);border-radius:50%;opacity:.6}
+.fan svg{display:block;width:100%;height:auto}
+.draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.6s cubic-bezier(.45,.05,.25,1) .3s forwards}.d2{animation-delay:.5s}.d3{animation-delay:.7s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.area{opacity:0;animation:area 1.2s ease 1.4s forwards}@keyframes area{to{opacity:.16}}
+.shot{margin:30px 0 90px;border-radius:18px;overflow:hidden;border:1px solid var(--hair);box-shadow:0 40px 90px -40px rgba(124,58,237,.55)}
+.shot img{display:block;width:100%}
+section{padding:80px 0;border-top:1px solid var(--hair)}
+.num{display:flex;gap:18px;align-items:baseline;margin-bottom:34px}
+h2{font:400 clamp(40px,5vw,58px)/1.05 'Instrument Serif',Georgia,serif;letter-spacing:-.01em}
+h2 em{color:var(--acc)}
+.qs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.qs .card{padding:28px}
+.qs h3{font:400 28px/1.15 'Instrument Serif',Georgia,serif;margin:14px 0 10px}
+.qs p{color:var(--mut);font-size:16px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:50px}
+.stats div{padding:0 26px;border-left:1px solid var(--hair)}.stats div:first-child{border:0;padding-left:0}
+.stats b{display:block;font:400 64px/1 'Instrument Serif',Georgia,serif}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.gallery figure{margin:0}
+.gallery img{width:100%;display:block;border-radius:12px;border:1px solid var(--hair)}
+.gallery figcaption{margin-top:12px;color:var(--mut);font-size:15px}
+.gallery figcaption b{color:var(--ink);font-weight:600}
+.steps{counter-reset:s;display:grid;gap:14px;max-width:760px}
+.steps li{list-style:none;counter-increment:s;display:flex;gap:18px;padding:20px 24px}
+.steps li::before{content:"0" counter(s);font-family:'JetBrains Mono',monospace;color:var(--acc);font-size:14px;padding-top:3px}
+.steps code{font-family:'JetBrains Mono',monospace;font-size:14px;background:var(--hair);padding:2px 7px;border-radius:6px}
+.note{color:var(--mut);font-size:15px;margin-top:22px;max-width:760px}
+footer{padding:50px 0 70px;border-top:1px solid var(--hair);display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap}
+footer .sig{font:400 30px/1.2 'Instrument Serif',Georgia,serif}
+footer .sig em{color:var(--acc)}
+.fade{opacity:0;transform:translateY(10px);animation:fade 1s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes fade{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.fade{opacity:1;transform:none}.draw{stroke-dashoffset:0}.area{opacity:.16}}
+@media (max-width:860px){header{grid-template-columns:1fr}.qs,.gallery{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr;gap:28px}.stats div:nth-child(3){border:0;padding-left:0}nav .links{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="#"><img src="img/logo.png" alt="">Vardhan</a>
+    <div class="links mono"><a href="#why">Why</a><a href="#screens">Screens</a><a href="#get">Download</a><a href="https://github.com/Stanvi09/Vardhan">GitHub</a></div>
+  </nav>
+
+  <header>
+    <div class="fade">
+      <p class="mono">Tanvi Sadashiv &nbsp;/&nbsp; Fig. 07</p>
+      <h1>Vardhan</h1>
+      <p class="lede">A money planner for first-time investors. It shows <b>what a bad year would cost you</b>, and the news that explains why.</p>
+      <div class="cta">
+        <a class="btn primary" href="download/Vardhan.zip">Download for Windows</a>
+        <a class="btn ghost" href="https://github.com/Stanvi09/Vardhan">View the code</a>
+      </div>
+      <p class="small">Free · 3 MB · Windows 10 or 11 · then click <b>Try the demo</b></p>
+    </div>
+    <div class="card fan fade" style="animation-delay:.2s">
+      <div class="bar"><span class="dots"><i></i><i></i><i></i></span><span class="mono" style="letter-spacing:.08em;text-transform:none">aarav · next 12 months</span></div>
+      <svg viewBox="0 0 400 200" role="img" aria-label="12-month outlook: good year plus 77,501 rupees, most likely plus 28,797, bad year minus 8,231">
+        <path d="M24 110H250" stroke="var(--hair)" stroke-dasharray="3 4"/>
+        <path d="M24 110 C82 100 132 78 252 34 L252 144 C142 142 82 122 24 110Z" fill="var(--acc)" class="area"/>
+        <path d="M24 110 C82 100 132 78 252 34" fill="none" stroke="var(--good)" stroke-width="1.6" class="draw" pathLength="1"/>
+        <path d="M24 110 C82 122 142 142 252 144" fill="none" stroke="var(--bad)" stroke-width="1.6" class="draw d3" pathLength="1"/>
+        <path d="M24 110 C92 106 162 96 252 80" fill="none" stroke="var(--acc)" stroke-width="2.6" stroke-linecap="round" class="draw d2" pathLength="1"/>
+        <circle cx="24" cy="110" r="4" fill="var(--acc)"/><circle cx="252" cy="80" r="4" fill="var(--acc)"/>
+        <g font-family="JetBrains Mono,monospace">
+          <text x="268" y="30" font-size="10" letter-spacing="1.5" fill="var(--mut)">GOOD YEAR</text><text x="268" y="48" font-size="14" fill="var(--good)">+₹77,501</text>
+          <text x="268" y="76" font-size="10" letter-spacing="1.5" fill="var(--mut)">MOST LIKELY</text><text x="268" y="94" font-size="14" fill="var(--ink)">+₹28,797</text>
+          <text x="268" y="140" font-size="10" letter-spacing="1.5" fill="var(--mut)">BAD YEAR</text><text x="268" y="158" font-size="14" fill="var(--bad)">−₹8,231</text>
+          <text x="24" y="184" font-size="10" letter-spacing="1.5" fill="var(--mut)">NOW</text><text x="252" y="184" font-size="10" letter-spacing="1.5" fill="var(--mut)" text-anchor="end">12 MONTHS</text>
+        </g>
+      </svg>
+    </div>
+  </header>
+
+  <div class="shot fade" style="animation-delay:.35s"><img src="img/home.jpg" alt="Vardhan home screen: portfolio value, amount invested, returns, allocation and holdings"></div>
+
+  <section id="why">
+    <div class="num"><span class="mono">01</span><h2>Most apps only show the <em>upside.</em></h2></div>
+    <div class="qs">
+      <div class="card"><span class="mono">Question one</span><h3>What should I invest in, for my goals?</h3><p>A personal, diversified plan from real Indian and US stocks, with a safe portion that grows as a goal gets closer.</p></div>
+      <div class="card"><span class="mono">Question two</span><h3>How much could I lose?</h3><p>A bad year, the average of the worst 5%, and a repeat of the Covid crash or 2008, all in rupees, from 3,000 simulated years.</p></div>
+      <div class="card"><span class="mono">Question three</span><h3>My friend said buy X. Should I?</h3><p>A verdict for you, with the news red flags an AI found in the headlines, and safer stocks that fit better.</p></div>
+    </div>
+    <div class="stats">
+      <div><b>7,026</b><span class="mono">Lines of C</span></div>
+      <div><b>23</b><span class="mono">Real stocks</span></div>
+      <div><b>8</b><span class="mono">Data structures</span></div>
+      <div><b>63</b><span class="mono">Tests passing</span></div>
+    </div>
+  </section>
+
+  <section id="screens">
+    <div class="num"><span class="mono">02</span><h2>Every number, <em>explained.</em></h2></div>
+    <div class="gallery">
+      <figure><img src="img/plan.jpg" alt="My Plan screen" loading="lazy"><figcaption><b>My Plan.</b> Where your money goes, the next 12 months as a fan chart, and the odds of reaching each goal.</figcaption></figure>
+      <figure><img src="img/times.jpg" alt="The Vardhan Times newspaper page" loading="lazy"><figcaption><b>The Vardhan Times.</b> Ask "why?" and the AI's reading of the news opens as a newspaper page.</figcaption></figure>
+      <figure><img src="img/friend.jpg" alt="Friend's tip check screen" loading="lazy"><figcaption><b>Friend's tip check.</b> "Risky for you right now", with the reasons and the chance you lose money.</figcaption></figure>
+      <figure><img src="img/vani.jpg" alt="Ask Vani chat screen" loading="lazy"><figcaption><b>Vani.</b> The AI money guide, on-device and private, grounded in your plan and the news.</figcaption></figure>
+      <figure><img src="img/proof.jpg" alt="Proof it works back-test screen" loading="lazy"><figcaption><b>Proof it works.</b> The plan rebuilt from year-old prices and replayed against what really happened.</figcaption></figure>
+      <figure style="align-self:center"><p class="mono" style="margin-bottom:14px">Under the hood</p><p style="color:var(--mut)">Hash table, trie, max-heap, correlation graph with BFS, segment tree, job deque, linked lists and a stack, each shown working live. The AI never predicts a price: it returns bounded numbers the simulation uses, so every rupee on screen comes from tested code.</p></figure>
+    </div>
+  </section>
+
+  <section id="get">
+    <div class="num"><span class="mono">03</span><h2>Try it in <em>a minute.</em></h2></div>
+    <ol class="steps">
+      <li class="card"><div><a href="download/Vardhan.zip"><b>Download Vardhan.zip</b></a> and unzip it anywhere.</div></li>
+      <li class="card"><div>Double-click <code>Vardhan.exe</code>. If Windows warns you, click <b>More info → Run anyway</b>. It isn't code-signed, which costs money.</div></li>
+      <li class="card"><div>Click <b>Try the demo</b> to meet Aarav, 21, saving for a Master's and a house, with six months of investments already in.</div></li>
+      <li class="card"><div>Optional: install <a href="https://ollama.com">Ollama</a>, run <code>ollama pull llama3.2:3b</code>, and Vani answers on your own laptop.</div></li>
+    </ol>
+    <p class="note">An education project, not investment advice. In India, personalised advice needs SEBI registration. On macOS or Linux, build from source with <code>make</code>.</p>
+  </section>
+
+  <footer>
+    <p class="sig">Designed and built by Tanvi Sadashiv, <em>one detail at a time.</em></p>
+    <p class="mono"><a href="https://www.linkedin.com/in/tanvi-sadashiv-3713ba381">LinkedIn</a> &nbsp;·&nbsp; <a href="https://github.com/Stanvi09">GitHub</a></p>
+  </footer>
+</div>
+</body>
+</html>

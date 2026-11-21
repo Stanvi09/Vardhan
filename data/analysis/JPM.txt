@@ -1,0 +1,12 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=0.25
+vol_mult=0.95
+drift_tilt=0.01
+event_prob=0.04
+event_size=-0.12
+summary=Largest US bank; higher interest rates usually help bank profits, though a payments glitch this week was a reminder of operational risk.
+headline=JPMorgan glitch disrupts payments, but higher rates still help profits
+factor=Macro|1|Higher interest rates tend to boost banks' lending margins, and a December Fed hike is expected.
+factor=Operations|-1|On 16 Nov a technical problem at JPMorgan Chase disrupted transactions and online banking; it said this was not a cyberattack.
+news=17 Nov|Beinsure|Chase, Zelle disruptions add to a week of US tech outages

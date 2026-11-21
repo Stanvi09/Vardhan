@@ -1,0 +1,12 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=0.3
+vol_mult=0.95
+drift_tilt=0.02
+event_prob=0.05
+event_size=-0.12
+summary=Steady private bank benefiting from the return of foreign investors to financials; no company-specific red flags in recent news.
+headline=ICICI Bank rides the return of foreign money to Indian banks
+factor=Sector|2|Private banks were among the leading sectors as foreign buying picked up in November.
+factor=Macro|-1|High inflation could keep interest rates elevated, which can slow loan growth.
+news=09 Nov|HDFC Sky|ICICI Bank among top gainers as banks lead

@@ -1,0 +1,11 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=0.0
+vol_mult=1.05
+drift_tilt=0.0
+event_prob=0.06
+event_size=-0.14
+summary=Caught in the AI-led tech sell-off; no major company-specific news found this week.
+headline=Alphabet drifts lower as investors rethink the AI spending boom
+factor=Sector|-1|Big Tech is falling as investors rethink AI spending.
+factor=Macro|-1|Rising rate expectations hurt high-valuation growth stocks.

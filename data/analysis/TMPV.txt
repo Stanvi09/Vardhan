@@ -1,0 +1,13 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=-0.35
+vol_mult=1.25
+drift_tilt=-0.05
+event_prob=0.1
+event_size=-0.18
+summary=The passenger-vehicle arm after the Tata Motors demerger; autos were among the weakest sectors recently.
+headline=Tata Motors' car arm slips as autos lag the market
+factor=Sector|-2|Auto stocks led sector losses in the week of 9-13 Nov.
+factor=Operations|-1|New listing after the demerger means a short price history and higher uncertainty.
+factor=Sector|1|Festive-season deliveries were expected to grow.
+news=17 Nov|HDFC Sky|Tata Motors PV slips 1.2% to ₹259

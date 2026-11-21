@@ -1,0 +1,12 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=0.2
+vol_mult=1.0
+drift_tilt=0.01
+event_prob=0.04
+event_size=-0.12
+summary=A global Microsoft 365 outage hit businesses for more than a day, and the whole AI trade is under pressure.
+headline=Microsoft 365 goes dark for a day as the AI trade wobbles
+factor=Operations|-1|Outlook, Teams and Copilot went down worldwide from late 12 Nov for more than 24 hours.
+factor=Sector|-1|Investors are questioning heavy AI spending across Big Tech.
+news=13 Nov|Khaleej Times|Microsoft outage knocks out products in 74 countries

@@ -1,0 +1,11 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=0.2
+vol_mult=1.05
+drift_tilt=0.01
+event_prob=0.06
+event_size=-0.14
+summary=Caught in the AI-led tech sell-off as markets expect a US rate hike in December; no major company-specific news found in our check.
+headline=Amazon slips with Big Tech as rate-hike fears grow
+factor=Sector|-1|Big Tech is falling as investors rethink heavy AI spending.
+factor=Macro|-1|Higher interest rates can slow consumer spending.

@@ -1,0 +1,15 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=0.55
+vol_mult=0.95
+drift_tilt=0.04
+event_prob=0.06
+event_size=-0.15
+summary=Record quarterly profit and its best trading day since 2020. Lower crude helps refining; retail is still a soft spot after a weak year for the stock.
+headline=Reliance posts its biggest-ever profit as refining roars back
+factor=Earnings|3|Q2 FY27 profit hit a record ₹29,550 crore, up 33.8% from a year ago, led by refining (O2C).
+factor=Earnings|2|Shares jumped about 12% after the results, adding over $19 billion in market value.
+factor=Macro|1|Falling crude oil prices support refining and petrochemical margins.
+factor=Sector|-1|Retail is the weak spot: Reliance Retail's quarterly profit fell about 24%.
+news=02 Nov|Ventura|Reliance surges ~12% after record Q2 profit and falling crude
+news=03 Nov|Kotak Neo|Reliance adds over $19 billion in market value after results

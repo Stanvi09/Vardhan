@@ -1,0 +1,14 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=-0.5
+vol_mult=1.3
+drift_tilt=-0.08
+event_prob=0.12
+event_size=-0.18
+summary=Same AI-disruption pressure as the rest of Indian IT, and it is down about a third this year as foreign investors sold.
+headline=Infosys keeps sliding as AI fears haunt Indian IT
+factor=Sector|-3|AI-disruption fears continue to weigh on Indian IT; Infosys fell to about ₹1,109 on 18 Nov.
+factor=Macro|-2|Down more than 20% in 2026; the Nifty IT index is down about 18% this year.
+factor=Earnings|1|Nvidia's strong results eased some global tech worries, which could help sentiment.
+news=18 Nov|Business Today|Infosys, Wipro, other IT stocks fall despite Nvidia beat
+news=18 Nov|Goodreturns|Infosys declines 1.9% as IT sell-off continues

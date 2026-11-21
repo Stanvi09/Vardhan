@@ -1,0 +1,12 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=0.25
+vol_mult=0.9
+drift_tilt=0.02
+event_prob=0.05
+event_size=-0.12
+summary=Pharma has been a defensive pocket this month and held up when the wider market fell.
+headline=Pharma holds firm while the wider market slips
+factor=Sector|1|Pharma bucked the market fall on 18 Nov.
+factor=Sector|1|Healthcare usually falls less than the market in a downturn.
+news=18 Nov|DSIJ|PSU banks and pharma buck the trend as market falls

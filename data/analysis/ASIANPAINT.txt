@@ -1,0 +1,12 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=0.05
+vol_mult=1.0
+drift_tilt=0.000
+event_prob=0.05
+event_size=-0.12
+summary=Sales grew 16.9% in the September quarter, but profit rose only 7.5% because raw-material costs jumped, squeezing margins.
+headline=Asian Paints sales jump 17%, but costlier raw materials squeeze profit
+factor=Earnings|1|Q2 FY27 revenue rose 16.9% to about ₹9,954 crore; domestic coatings volumes grew 6.8%.
+factor=Operations|-1|Profit rose only 7.5% to ₹1,068 crore as material costs jumped about 35%; the margin fell to 15.6% from 17.7%.
+news=29 Oct|JM Financial|Asian Paints Q2 PAT up 8% to ₹1,068 crore

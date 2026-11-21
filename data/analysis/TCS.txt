@@ -1,0 +1,14 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=-0.45
+vol_mult=1.25
+drift_tilt=-0.06
+event_prob=0.1
+event_size=-0.15
+summary=Indian IT is in a long slide as investors worry AI will shrink demand for outsourced software services. Some brokers see deep value, but the trend is still down.
+headline=TCS slides with Indian IT on fears AI will shrink outsourcing
+factor=Sector|-3|Investors fear AI tools will reduce demand for IT services; Nifty IT is down about 4% in November and about 18% in 2026. TCS closed at ₹2,379.50 on 18 Nov.
+factor=Sector|-1|Indian IT tends to follow US tech, which is in a sharp AI-led sell-off.
+factor=Earnings|1|Some global brokers call large IT firms deep-value buys with stable cash flows.
+news=18 Nov|Goodreturns|IT stocks under pressure; Nifty IT sinks 1.24%
+news=04 Nov|HDFC Sky|TCS leads Nifty losers

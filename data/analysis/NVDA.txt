@@ -1,0 +1,16 @@
+when=news to 18 Nov 2026
+by=AI, fact-checked 21 Nov
+sentiment=-0.6
+vol_mult=1.4
+drift_tilt=-0.1
+event_prob=0.22
+event_size=-0.3
+summary=CEO Jensen Huang resigned on 12 Nov and CFO Colette Kress is interim CEO. Results on 17 Nov beat forecasts (revenue up 103%), but the shares had fallen about 28% in a month and new US export rules add risk.
+headline=Huang resigns as Nvidia CEO; record quarter follows five days later
+factor=Leadership|-3|Jensen Huang resigned as CEO on 12 Nov; CFO Colette Kress is interim CEO, and board chair Harvey Jones said the board won't reinstate him.
+factor=Regulation|-2|On 16 Nov the US Commerce Department closed a loophole that let Chinese firms rent Nvidia chips in overseas data centres, and added licence rules for five countries.
+factor=Macro|-2|The shares fell about 28% in the month before the results.
+factor=Earnings|2|Q3 revenue rose 103% to $115.8 billion, beating forecasts; Nvidia guided $130 billion for next quarter and added $150 billion to buybacks.
+news=18 Nov|TheStreet|Nvidia clears the bar in first report without Huang
+news=16 Nov|TheStreet|AI stocks drag S&P 500 back toward 5 Nov lows
+news=12 Nov|TheStreet|Huang out at Nvidia, CFO Kress named interim CEO
